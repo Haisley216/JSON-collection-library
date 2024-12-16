@@ -1,0 +1,279 @@
+/*Poppins font*/
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins";
+  color: #393939;
+
+  /* Removing extra padding */
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/* Styles for layout */
+
+#mainContainer {
+  display: flex;
+  height: 100vh;
+  margin: 2em;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+/*  min-width: 25vw;*/
+  max-width: 250px;
+  padding: 9.5em 0px 0px 3.5em;
+  line-height: 180%;
+}
+
+.contentContainer {
+  width: 100%;
+  height: 100%;
+/*  overflow-y: auto;*/
+}
+
+
+#contentGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.myName{
+  font-weight: 500;
+  font-size: 200%;
+  padding-left: 10.4em;
+
+}
+
+#projectTitle{
+  font-weight: 500;
+  font-size: 110%;
+  margin: 5em 0px 1em 2em;
+}
+
+#contentItem{
+  display: flex;
+  flex-direction: column;
+}
+
+.contentImg{
+  width: 85%;
+  aspect-ratio: 4/3; /* NOTE: Crops it to always be square */
+  object-fit: cover;
+  object-position: center;
+}
+
+.contentTitle{
+  font-weight: 400;
+}
+
+.contentYear{
+  font-weight: 300;
+  font-style: italic;
+  font-size: 80%;
+  color: #A9A9A9;
+  margin-top: -1em;
+}
+
+.contentField{
+  font-weight: 400;
+  font-size: 90%;
+  color: #727272;
+  margin-top: 0.5em;
+}
+
+#projectPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectItem {
+    order: 1;
+}
+
+#projectItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.projectImg{
+  width: 75%;
+  aspect-ratio: 1.6/1;
+  object-fit: cover;
+  object-position: center;
+  margin: 0px 2em 2em 2em ;
+}
+
+.projectDes{
+  width: 830px;
+  display: flex;
+  margin: 1em 0px 3em 2em;
+}
+
+.swiper {
+  width: 830px;
+  height: 550px;
+  order: 2;
+/*  position: absolute;*/
+  right: 115px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 35px; 
+    height: 35px; 
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    color: #ffffff; 
+    font-size: 25px;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.swiper-button-next::after {
+    content: '→';
+}
+
+.swiper-button-prev::after {
+    content: '←'; 
+}
+
+
+
+
